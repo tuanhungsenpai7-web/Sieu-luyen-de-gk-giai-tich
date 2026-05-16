@@ -1007,369 +1007,363 @@
 <!-- KẾT THÚC ĐỀ SỐ 4 -->
 
 <!-- ========================================================= -->
-<!-- MÃ HTML ĐỀ SỐ 5 (BẢN GỐC) - DÁN VÀO DATABASE -->
+<!-- MÃ HTML ĐỀ SỐ 5 (GIẢI TÍCH 2 - CHƯƠNG 1) - KỸ THUẬT NÂNG CAO -->
 <!-- ========================================================= -->
-<div class="paper" id="de5_gt2" data-tag="gt2" data-title="Đề Thi Thử Số 5" data-desc="Trọng tâm: Miền xác định, Vi phân, Điểm dừng, Định lý Schwarz.">
-    <h2 style="text-align: center; color: #0052cc;">ĐỀ THI THỬ SỐ 5 - GIẢI TÍCH 2</h2>
+<div class="paper" id="de5_gt2" data-tag="gt2" data-title="Đề Thi Thử Số 5 - GT2" data-desc="Trọng tâm: Đạo hàm hàm hợp, Giới hạn khó, Xấp xỉ vi phân, Bẫy tính khả vi.">
+    <h2 style="text-align: center; color: #0052cc;">ĐỀ THI THỬ SỐ 5 - GIẢI TÍCH 2 (CHƯƠNG 1)</h2>
     <hr style="margin-bottom: 20px;">
-
+    
     <h3 style="color: #d32f2f;">PHẦN I: Tích chọn MỘT đáp án đúng (Mỗi câu 2 điểm)</h3>
 
     <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 1: Miền xác định của hàm số $z = \arcsin\left(\frac{y-1}{x}\right)$ là:</div>
+        <div class="question-text">Câu 1: Miền xác định của hàm số $f(x,y) = \sqrt{x^2+y^2-1} + \ln(4-x^2-y^2)$ là phần không gian nào?</div>
         <div class="options">
-            <label><input type="radio" name="de5_q1" value="A"> A. $D = \{(x,y) \in \mathbb{R}^2 \mid x \neq 0, -1 \le \frac{y-1}{x} \le 1\}$</label>
-            <label><input type="radio" name="de5_q1" value="B"> B. $D = \{(x,y) \in \mathbb{R}^2 \mid -1 < \frac{y-1}{x} < 1\}$</label>
-            <label><input type="radio" name="de5_q1" value="C"> C. $D = \{(x,y) \in \mathbb{R}^2 \mid x > 0, -x \le y-1 \le x\}$</label>
-            <label><input type="radio" name="de5_q1" value="D"> D. $D = \{(x,y) \in \mathbb{R}^2 \mid x^2+y^2 \le 1\}$</label>
+            <label><input type="radio" name="de5_gt2_q1" value="A"> A. $1 \le x^2+y^2 < 4$</label>
+            <label><input type="radio" name="de5_gt2_q1" value="B"> B. $1 < x^2+y^2 < 4$</label>
+            <label><input type="radio" name="de5_gt2_q1" value="C"> C. $1 \le x^2+y^2 \le 4$</label>
+            <label><input type="radio" name="de5_gt2_q1" value="D"> D. $x^2+y^2 \le 4$</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Điều kiện để hàm $\arcsin(u)$ xác định là $-1 \le u \le 1$. Do đó ta có điều kiện $-1 \le \frac{y-1}{x} \le 1$, và điều kiện mẫu số phải khác 0 ($x \neq 0$).</div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Điều kiện thứ nhất (cho căn bậc hai): $x^2+y^2-1 \ge 0 \Rightarrow x^2+y^2 \ge 1$.<br> Điều kiện thứ hai (cho logarit): $4-x^2-y^2 > 0 \Rightarrow x^2+y^2 < 4$.<br> Kết hợp lại, ta được miền hình vành khăn: $1 \le x^2+y^2 < 4$ (Lấy biên trong, không lấy biên ngoài).</div>
     </div>
 
     <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 2: Vi phân toàn phần $dz$ của hàm số $z = \ln \tan\left(\frac{y}{x}\right)$ là biểu thức nào?</div>
+        <div class="question-text">Câu 2: Tính giới hạn $\lim_{(x,y)\to(0,0)} \frac{1-\cos(x^2+y^2)}{x^2+y^2}$.</div>
         <div class="options">
-            <label><input type="radio" name="de5_q2" value="A"> A. $dz = \frac{2(xdy - ydx)}{x^2 \sin(2y/x)}$</label>
-            <label><input type="radio" name="de5_q2" value="B"> B. $dz = \frac{-ydx + xdy}{x^2 \sin^2(y/x)}$</label>
-            <label><input type="radio" name="de5_q2" value="C"> C. $dz = \frac{xdy - ydx}{x^2 \sin(2y/x)}$</label>
-            <label><input type="radio" name="de5_q2" value="D"> D. $dz = \frac{2(ydx - xdy)}{x^2 \sin(2y/x)}$</label>
+            <label><input type="radio" name="de5_gt2_q2" value="A"> A. 0</label>
+            <label><input type="radio" name="de5_gt2_q2" value="B"> B. 1/2</label>
+            <label><input type="radio" name="de5_gt2_q2" value="C"> C. 1</label>
+            <label><input type="radio" name="de5_gt2_q2" value="D"> D. Không tồn tại</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Tính $z'_x = \frac{-y}{x^2 \sin(y/x)\cos(y/x)} = \frac{-2y}{x^2 \sin(2y/x)}$ và $z'_y = \frac{1}{x \sin(y/x)\cos(y/x)} = \frac{2x}{x^2 \sin(2y/x)}$. Lắp vào $dz = z'_x dx + z'_y dy$ ta rút nhân tử chung ra được kết quả A.</div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Đặt $t = x^2+y^2$. Khi $(x,y) \to (0,0)$ thì $t \to 0$. Ta có giới hạn 1 biến: $\lim_{t\to 0} \frac{1-\cos t}{t}$. Theo khai triển Maclaurin $1-\cos t \sim t^2/2$. Giới hạn trở thành $\lim_{t\to 0} \frac{t^2/2}{t} = \lim_{t\to 0} \frac{t}{2} = 0$. Chú ý phân biệt bẫy mẫu số là $t$ hay $t^2$ nhé!</div>
     </div>
 
     <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 3: Tính đạo hàm riêng $z'_x$ của hàm số $z = \ln(x+\sqrt{x^2+y^2})$.</div>
+        <div class="question-text">Câu 3: Đạo hàm riêng theo biến $x$ của hàm số $f(x,y) = \ln(x + \sqrt{x^2+y^2})$ là:</div>
         <div class="options">
-            <label><input type="radio" name="de5_q3" value="A"> A. $\frac{1}{\sqrt{x^2+y^2}}$</label>
-            <label><input type="radio" name="de5_q3" value="B"> B. $\frac{x}{\sqrt{x^2+y^2}}$</label>
-            <label><input type="radio" name="de5_q3" value="C"> C. $\frac{1}{x+\sqrt{x^2+y^2}}$</label>
-            <label><input type="radio" name="de5_q3" value="D"> D. $\frac{y}{\sqrt{x^2+y^2}}$</label>
+            <label><input type="radio" name="de5_gt2_q3" value="A"> A. $\frac{1}{\sqrt{x^2+y^2}}$</label>
+            <label><input type="radio" name="de5_gt2_q3" value="B"> B. $\frac{x}{\sqrt{x^2+y^2}}$</label>
+            <label><input type="radio" name="de5_gt2_q3" value="C"> C. $\frac{1}{x+\sqrt{x^2+y^2}}$</label>
+            <label><input type="radio" name="de5_gt2_q3" value="D"> D. $\frac{x}{x+\sqrt{x^2+y^2}}$</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Áp dụng quy tắc đạo hàm: $z'_x = \frac{1}{x+\sqrt{x^2+y^2}} \cdot \left(1 + \frac{x}{\sqrt{x^2+y^2}}\right) = \frac{1}{x+\sqrt{x^2+y^2}} \cdot \frac{\sqrt{x^2+y^2}+x}{\sqrt{x^2+y^2}}$. Triệt tiêu tử mẫu ta còn lại $1/\sqrt{x^2+y^2}$.</div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Dùng công thức đạo hàm $(\ln u)' = u'/u$.<br> $u'_x = 1 + \frac{2x}{2\sqrt{x^2+y^2}} = 1 + \frac{x}{\sqrt{x^2+y^2}} = \frac{\sqrt{x^2+y^2}+x}{\sqrt{x^2+y^2}}$.<br> Chia cho u: $\frac{u'_x}{u} = \frac{\frac{\sqrt{x^2+y^2}+x}{\sqrt{x^2+y^2}}}{x + \sqrt{x^2+y^2}}$. Tử và mẫu triệt tiêu nhau cụm $x+\sqrt{x^2+y^2}$, chỉ còn lại $\frac{1}{\sqrt{x^2+y^2}}$.</div>
     </div>
 
     <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 4: Hàm số $z = 2x^2 + 3y^2 - e^{-(x^2+y^2)}$ có tính chất gì về cực trị?</div>
+        <div class="question-text">Câu 4: Cho hàm hợp $z = f(u,v)$ có các đạo hàm riêng liên tục, với $u = x^2-y^2$ và $v = xy$. Tính giá trị của biểu thức $y z'_x + x z'_y$.</div>
         <div class="options">
-            <label><input type="radio" name="de5_q4" value="A"> A. Đạt cực tiểu tại (0,0) và không có cực đại</label>
-            <label><input type="radio" name="de5_q4" value="B"> B. Có một cực đại tại (0,0)</label>
-            <label><input type="radio" name="de5_q4" value="C"> C. Đạt cực tiểu tại (1,1)</label>
-            <label><input type="radio" name="de5_q4" value="D"> D. Không có cực trị</label>
+            <label><input type="radio" name="de5_gt2_q4" value="A"> A. $(x^2+y^2)f'_v$</label>
+            <label><input type="radio" name="de5_gt2_q4" value="B"> B. $(x^2+y^2)f'_u$</label>
+            <label><input type="radio" name="de5_gt2_q4" value="C"> C. 0</label>
+            <label><input type="radio" name="de5_gt2_q4" value="D"> D. $xy f'_u + x^2 f'_v$</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Giải hệ đạo hàm tìm được điểm dừng duy nhất $(0,0)$. Lập luận $2x^2+3y^2 \ge 0$ và $-e^{-(x^2+y^2)} \ge -1$, do đó $z \ge -1 = z(0,0)$ với mọi $(x,y)$. Điểm $(0,0)$ là điểm cực tiểu toàn cục.</div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Áp dụng quy tắc đạo hàm hàm hợp (Chain rule):<br> $z'_x = f'_u \cdot u'_x + f'_v \cdot v'_x = f'_u \cdot (2x) + f'_v \cdot (y)$.<br> $z'_y = f'_u \cdot u'_y + f'_v \cdot v'_y = f'_u \cdot (-2y) + f'_v \cdot (x)$.<br> Thay vào biểu thức: $y z'_x + x z'_y = y(2xf'_u + yf'_v) + x(-2yf'_u + xf'_v) = 2xyf'_u + y^2f'_v - 2xyf'_u + x^2f'_v = (x^2+y^2)f'_v$.</div>
     </div>
 
-    <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 5: Cho $z = uv$ với $u = x^2+y^2, v = e^{xy}$. Đạo hàm riêng $z'_y$ là:</div>
+    <div class="question-block" data-type="single" data-answer="B">
+        <div class="question-text">Câu 5: Cho hàm số ẩn $z = z(x,y)$ xác định bởi phương trình $x^3+y^3+z^3 - 3xyz = 0$. Biểu thức đạo hàm riêng $z'_x$ là:</div>
         <div class="options">
-            <label><input type="radio" name="de5_q5" value="A"> A. $2y e^{xy} + x(x^2+y^2)e^{xy}$</label>
-            <label><input type="radio" name="de5_q5" value="B"> B. $2x e^{xy} + y(x^2+y^2)e^{xy}$</label>
-            <label><input type="radio" name="de5_q5" value="C"> C. $2y e^{xy} + y(x^2+y^2)e^{xy}$</label>
-            <label><input type="radio" name="de5_q5" value="D"> D. $x(x^2+y^2)e^{xy}$</label>
+            <label><input type="radio" name="de5_gt2_q5" value="A"> A. $\frac{x^2-yz}{z^2-xy}$</label>
+            <label><input type="radio" name="de5_gt2_q5" value="B"> B. $-\frac{x^2-yz}{z^2-xy}$</label>
+            <label><input type="radio" name="de5_gt2_q5" value="C"> C. $\frac{z^2-xy}{x^2-yz}$</label>
+            <label><input type="radio" name="de5_gt2_q5" value="D"> D. $-\frac{z^2-xy}{x^2-yz}$</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Dùng công thức $(uv)' = u'v + uv'$ theo biến $y$. Ta có $u'_y = 2y$ và $v'_y = x e^{xy}$. Ráp vào ta thu được chính xác kết quả A.</div>
+        <div class="explanation"><b>Đáp án đúng: B.</b><br> Đặt $F(x,y,z) = x^3+y^3+z^3-3xyz = 0$.<br> $F'_x = 3x^2 - 3yz$.<br> $F'_z = 3z^2 - 3xy$.<br> Theo công thức đạo hàm hàm ẩn: $z'_x = -\frac{F'_x}{F'_z} = -\frac{3x^2-3yz}{3z^2-3xy} = -\frac{x^2-yz}{z^2-xy}$.</div>
     </div>
 
     <div class="question-block" data-type="single" data-answer="D">
-        <div class="question-text">Câu 6: Tính giới hạn $\lim_{(x,y)\to(0,0)} \frac{x^2y^2}{x^4+3x^2y^2+y^4}$.</div>
+        <div class="question-text">Câu 6: Đạo hàm theo hướng $\vec{l} = (1, 2, 2)$ của hàm số $u = x^2 y + y^2 z + z^2 x$ tại điểm $M(1, 1, 1)$ bằng:</div>
         <div class="options">
-            <label><input type="radio" name="de5_q6" value="A"> A. $0$</label>
-            <label><input type="radio" name="de5_q6" value="B"> B. $1/3$</label>
-            <label><input type="radio" name="de5_q6" value="C"> C. $1$</label>
-            <label><input type="radio" name="de5_q6" value="D"> D. Không tồn tại</label>
+            <label><input type="radio" name="de5_gt2_q6" value="A"> A. 15</label>
+            <label><input type="radio" name="de5_gt2_q6" value="B"> B. 9</label>
+            <label><input type="radio" name="de5_gt2_q6" value="C"> C. 3</label>
+            <label><input type="radio" name="de5_gt2_q6" value="D"> D. 5</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: D.</b><br> Cho tiến tới gốc theo phương $y=kx$, giới hạn trở thành $\frac{k^2x^4}{x^4+3k^2x^4+k^4x^4} = \frac{k^2}{1+3k^2+k^4}$. Kết quả phụ thuộc vào số $k$ tự do chọn, do đó giới hạn chung không tồn tại.</div>
-    </div>
-
-    <div class="question-block" data-type="single" data-answer="B">
-        <div class="question-text">Câu 7: Tính vi phân toàn phần cấp hai $d^2z(0,0)$ của hàm số $z = \sin(x^2+y^3)$.</div>
-        <div class="options">
-            <label><input type="radio" name="de5_q7" value="A"> A. $0$</label>
-            <label><input type="radio" name="de5_q7" value="B"> B. $2dx^2$</label>
-            <label><input type="radio" name="de5_q7" value="C"> C. $2dxdy$</label>
-            <label><input type="radio" name="de5_q7" value="D"> D. $2dy^2$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: B.</b><br> $z'_x = 2x\cos(x^2+y^3), z'_y = 3y^2\cos(x^2+y^3)$. Đạo hàm lần 2: $z''_{xx} = 2\cos(...) - 4x^2\sin(...) \Rightarrow z''_{xx}(0,0) = 2$. Các đạo hàm $z''_{yy}$ và $z''_{xy}$ tại gốc đều chứa nhân tử làm nó bằng 0. Vậy $d^2z(0,0) = 2dx^2$.</div>
-    </div>
-
-    <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 8: Cho phương trình $z e^z = x e^x + y e^y$ xác định hàm ẩn $z$. Đạo hàm riêng $z'_x(0,0)$ bằng:</div>
-        <div class="options">
-            <label><input type="radio" name="de5_q8" value="A"> A. $1$</label>
-            <label><input type="radio" name="de5_q8" value="B"> B. $0$</label>
-            <label><input type="radio" name="de5_q8" value="C"> C. $-1$</label>
-            <label><input type="radio" name="de5_q8" value="D"> D. $2$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Đặt $F = ze^z - xe^x - ye^y$. Tại $(0,0) \Rightarrow z=0$. Tính $F'_x = -e^x(x+1) \Rightarrow F'_x(0,0,0) = -1$. $F'_z = e^z(z+1) \Rightarrow F'_z(0,0,0) = 1$. Suy ra $z'_x = -(-1)/1 = 1$.</div>
-    </div>
-
-    <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 9: Điểm cực tiểu của hàm số $f(x,y) = x^2 + y$ với điều kiện $2x+y=1$ là:</div>
-        <div class="options">
-            <label><input type="radio" name="de5_q9" value="A"> A. $(1, -1)$</label>
-            <label><input type="radio" name="de5_q9" value="B"> B. $(-1, 3)$</label>
-            <label><input type="radio" name="de5_q9" value="C"> C. $(0, 1)$</label>
-            <label><input type="radio" name="de5_q9" value="D"> D. $(2, -3)$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Rút $y = 1-2x$ từ điều kiện thay vào hàm $f$, ta có hàm 1 biến $g(x) = x^2 - 2x + 1 = (x-1)^2$. Hàm này đạt cực tiểu bằng 0 tại $x=1$, từ đó tính được $y=-1$.</div>
-    </div>
-
-    <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 10: Khai triển Maclaurin của hàm số $f(x,y) = e^x \sin y$ đến bậc 3 là biểu thức nào?</div>
-        <div class="options">
-            <label><input type="radio" name="de5_q10" value="A"> A. $y + xy + \frac{x^2y}{2} - \frac{y^3}{6} + o((x^2+y^2)^{3/2})$</label>
-            <label><input type="radio" name="de5_q10" value="B"> B. $1 + x + y + \frac{x^2y}{2} - \frac{y^3}{6} + o((x^2+y^2)^{3/2})$</label>
-            <label><input type="radio" name="de5_q10" value="C"> C. $x + xy - \frac{x^3}{6} + o((x^2+y^2)^{3/2})$</label>
-            <label><input type="radio" name="de5_q10" value="D"> D. $y - \frac{y^3}{6} + o((x^2+y^2)^{3/2})$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> $e^x \approx 1 + x + \frac{x^2}{2}$ và $\sin y \approx y - \frac{y^3}{6}$. Lấy 2 đa thức nhân phân phối và chỉ giữ lại các hạng tử bậc $\le 3$, ta ra được đáp án A.</div>
-    </div>
-
-    <br>
-    <h3 style="color: #d32f2f;">PHẦN II: Tích chọn NHIỀU HƠN MỘT đáp án đúng (Mỗi câu 2 điểm)</h3>
-
-    <div class="question-block" data-type="multiple" data-answer="A,B,C">
-        <div class="question-text">Câu 11: Cho phương trình $x^2+y+z^3+e^z = 0$ xác định hàm ẩn $z=z(x,y)$. Các phát biểu nào ĐÚNG?</div>
-        <div class="options">
-            <label><input type="checkbox" name="de5_q11" value="A"> A. $z'_x = \frac{-2x}{3z^2+e^z}$</label>
-            <label><input type="checkbox" name="de5_q11" value="B"> B. $z'_y = \frac{-1}{3z^2+e^z}$</label>
-            <label><input type="checkbox" name="de5_q11" value="C"> C. $F'_z = 3z^2+e^z$</label>
-            <label><input type="checkbox" name="de5_q11" value="D"> D. $z'_x = \frac{2x}{3z^2+e^z}$</label>
-            <label><input type="checkbox" name="de5_q11" value="E"> E. $z'_y = \frac{1}{3z^2+e^z}$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A, B, C.</b><br> Đặt $F = x^2+y+z^3+e^z$. Tính đạo hàm theo các biến tương ứng ta có $F'_z = 3z^2+e^z$ (C đúng). Áp dụng quy tắc đạo hàm hàm ẩn ta được A và B chuẩn xác.</div>
-    </div>
-
-    <div class="question-block" data-type="multiple" data-answer="A,B,C">
-        <div class="question-text">Câu 12: Tìm GTNN, GTLN của $z = x^2+y^2+xy-7x-8y$ trên hình tam giác tạo bởi $x=0, y=0, x+y=6$. Các khẳng định ĐÚNG:</div>
-        <div class="options">
-            <label><input type="checkbox" name="de5_q12" value="A"> A. GTLN là $0$ đạt tại gốc tọa độ $(0,0)$</label>
-            <label><input type="checkbox" name="de5_q12" value="B"> B. GTNN là $-19$ đạt được tại điểm $(2,3)$</label>
-            <label><input type="checkbox" name="de5_q12" value="C"> C. Hàm số có 1 điểm dừng bên trong miền là $(2,3)$</label>
-            <label><input type="checkbox" name="de5_q12" value="D"> D. GTNN là $-20$</label>
-            <label><input type="checkbox" name="de5_q12" value="E"> E. GTLN là $10$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A, B, C.</b><br> Giải hệ đạo hàm tìm được $(2,3)$ là điểm dừng duy nhất trong miền tam giác (C đúng). Tại đây $z=-19$. Kiểm tra giá trị cực trị trên 3 đoạn biên tam giác, so sánh tất cả ta rút ra được Max là 0 và Min là -19 (A, B đúng).</div>
-    </div>
-
-    <div class="question-block" data-type="multiple" data-answer="A,B,E">
-        <div class="question-text">Câu 13: Định lý Schwarz về đạo hàm riêng hỗn hợp cho hàm $f(x,y)$ phát biểu:</div>
-        <div class="options">
-            <label><input type="checkbox" name="de5_q13" value="A"> A. Nếu $f''_{xy}$ và $f''_{yx}$ liên tục tại lân cận $M$ thì $f''_{xy}(M) = f''_{yx}(M)$</label>
-            <label><input type="checkbox" name="de5_q13" value="B"> B. Khẳng định tính giao hoán của đạo hàm riêng hỗn hợp nếu thỏa mãn điều kiện</label>
-            <label><input type="checkbox" name="de5_q13" value="C"> C. Chỉ cần hàm khả vi thì $f''_{xy} = f''_{yx}$</label>
-            <label><input type="checkbox" name="de5_q13" value="D"> D. Mọi hàm đa thức đều không tuân theo định lý Schwarz</label>
-            <label><input type="checkbox" name="de5_q13" value="E"> E. Điều kiện tiên quyết là sự tồn tại và liên tục của các đạo hàm cấp 2</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A, B, E.</b><br> A và E là nội dung chuẩn của định lý Schwarz trong giáo trình. B là mô tả ý nghĩa của định lý. C sai vì khả vi cấp 1 không đủ để có cấp 2. D sai hoàn toàn.</div>
-    </div>
-
-    <div class="question-block" data-type="multiple" data-answer="A,B,C,E">
-        <div class="question-text">Câu 14: Cho $f(x,y) = \frac{xy^2}{x^2+y^4}$ nếu $(x,y) \neq (0,0)$ và $0$ nếu $(x,y)=(0,0)$. Các mệnh đề nào ĐÚNG?</div>
-        <div class="options">
-            <label><input type="checkbox" name="de5_q14" value="A"> A. Hàm số gián đoạn tại $(0,0)$</label>
-            <label><input type="checkbox" name="de5_q14" value="B"> B. Tiến tới gốc theo parabol $x=ky^2$ thì giới hạn là $\frac{k}{k^2+1}$</label>
-            <label><input type="checkbox" name="de5_q14" value="C"> C. Tiến tới gốc theo đường thẳng $y=kx$ thì giới hạn bằng $0$</label>
-            <label><input type="checkbox" name="de5_q14" value="D"> D. Hàm liên tục tại $(0,0)$</label>
-            <label><input type="checkbox" name="de5_q14" value="E"> E. Tồn tại đạo hàm riêng tại $(0,0)$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A, B, C, E.</b><br> B và C được kiểm chứng dễ dàng bằng phép thay tương ứng. Do giới hạn khác nhau tùy phương nên hàm không có giới hạn, dẫn đến gián đoạn (A đúng, D sai). Trên trục Ox và Oy giá trị hàm luôn bằng 0 nên đạo hàm riêng tại gốc vẫn bằng 0 (E đúng).</div>
-    </div>
-
-    <div class="question-block" data-type="multiple" data-answer="A,B,C,D">
-        <div class="question-text">Câu 15: Xét việc ứng dụng vi phân để tính gần đúng $A = \ln(1.03^3+0.98^4-1)$. Các khẳng định nào ĐÚNG?</div>
-        <div class="options">
-            <label><input type="checkbox" name="de5_q15" value="A"> A. Ta đặt mô hình hàm $f(x,y) = \ln(x^3+y^4-1)$</label>
-            <label><input type="checkbox" name="de5_q15" value="B"> B. Tại điểm $x_0=1, y_0=1$ thì có các đạo hàm $f'_x = 3, f'_y = 4$</label>
-            <label><input type="checkbox" name="de5_q15" value="C"> C. Các số gia là $\Delta x = 0.03$ và $\Delta y = -0.02$</label>
-            <label><input type="checkbox" name="de5_q15" value="D"> D. Giá trị gần đúng tính được là $A \approx 0.01$</label>
-            <label><input type="checkbox" name="de5_q15" value="E"> E. Giá trị gần đúng tính được là $A \approx 0.08$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A, B, C, D.</b><br> $f(1,1)=0$. $f'_x = \frac{3x^2}{x^3+y^4-1} \Rightarrow 3$. $f'_y = \frac{4y^3}{x^3+y^4-1} \Rightarrow 4$. Thay số: $A \approx 0 + 3(0.03) + 4(-0.02) = 0.09 - 0.08 = 0.01$. Cả 4 ý A,B,C,D đều miêu tả chính xác quy trình này.</div>
-    </div>
-</div>
-
-<!-- ========================================================= -->
-<!-- MÃ HTML ĐỀ SỐ 6 (BẢN GỐC CHUẨN) - DÁN VÀO DATABASE -->
-<!-- ========================================================= -->
-<div class="paper" id="de6_gt2" data-tag="gt2" data-title="Đề Thi Thử Số 6" data-desc="Trọng tâm: Hàm nhiều biến, cực trị, hàm ẩn, vi phân cấp cao.">
-    <h2 style="text-align: center; color: #0052cc;">ĐỀ THI THỬ SỐ 6 - GIẢI TÍCH 2</h2>
-    <hr style="margin-bottom: 20px;">
-
-    <h3 style="color: #d32f2f;">PHẦN I: Tích chọn MỘT đáp án đúng (Mỗi câu 2 điểm)</h3>
-
-    <div class="question-block" data-type="single" data-answer="B">
-        <div class="question-text">Câu 1: Giới hạn $\lim_{(x,y)\to(0,0)} \frac{x(e^{2y} - 1) - 2y(e^x - 1)}{x^2 + y^2}$ có giá trị là:</div>
-        <div class="options">
-            <label><input type="radio" name="de6_q1" value="A"> A. $1$</label>
-            <label><input type="radio" name="de6_q1" value="B"> B. $0$</label>
-            <label><input type="radio" name="de6_q1" value="C"> C. Không xác định</label>
-            <label><input type="radio" name="de6_q1" value="D"> D. $-1$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: B.</b><br> Sử dụng khai triển Maclaurin: $e^t - 1 \approx t + \frac{t^2}{2}$. Ta có tử số $\approx x(2y + 2y^2) - 2y(x + \frac{x^2}{2}) = 2xy^2 - x^2y$. Khi chuyển sang tọa độ cực $x=r\cos\phi, y=r\sin\phi$, tử số là bậc 3 của $r$, mẫu số là bậc 2 của $r$. Giới hạn sẽ tiến tới $0$.</div>
-    </div>
-
-    <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 2: Cho hàm số $z = z(x, y)$ xác định ẩn qua phương trình $x^2 + y^2 + z^3 = 2$. Giá trị của biểu thức $T = z'_x(A) + 3z'_y(A)$ tại điểm $A(0, 1, 1)$ là:</div>
-        <div class="options">
-            <label><input type="radio" name="de6_q2" value="A"> A. $-2$</label>
-            <label><input type="radio" name="de6_q2" value="B"> B. $2$</label>
-            <label><input type="radio" name="de6_q2" value="C"> C. $2/3$</label>
-            <label><input type="radio" name="de6_q2" value="D"> D. $0$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Đặt $F = x^2+y^2+z^3-2$. Tính $F'_x = 2x, F'_y = 2y, F'_z = 3z^2$. Tại $(0,1,1)$, $F'_x=0, F'_y=2, F'_z=3$. Do đó $z'_x = -F'_x/F'_z = 0$ và $z'_y = -F'_y/F'_z = -2/3$. Thay vào $T = 0 + 3(-2/3) = -2$.</div>
+        <div class="explanation"><b>Đáp án đúng: D.</b><br> Vector Gradient $\nabla u = (u'_x, u'_y, u'_z) = (2xy+z^2, x^2+2yz, y^2+2zx)$.<br> Tại M(1,1,1): $\nabla u = (3, 3, 3)$.<br> Vector chỉ hướng có độ dài $|\vec{l}| = \sqrt{1^2+2^2+2^2} = 3$. Vector đơn vị $\vec{l}^0 = (1/3, 2/3, 2/3)$.<br> Đạo hàm theo hướng: $D_{\vec{l}} u = \nabla u \cdot \vec{l}^0 = 3(1/3) + 3(2/3) + 3(2/3) = 1 + 2 + 2 = 5$.</div>
     </div>
 
     <div class="question-block" data-type="single" data-answer="C">
-        <div class="question-text">Câu 3: Cho hàm số $f(x, y) = e^{-y} \sin x$. Tính giá trị của biểu thức $I = f'''_{xxx}(0, 0) + f'''_{xxy}(0, 0)$.</div>
+        <div class="question-text">Câu 7: Xét cực trị của hàm số $f(x,y) = x^3 + y^3 - 15xy$. Khẳng định nào ĐÚNG?</div>
         <div class="options">
-            <label><input type="radio" name="de6_q3" value="A"> A. $1$</label>
-            <label><input type="radio" name="de6_q3" value="B"> B. $0$</label>
-            <label><input type="radio" name="de6_q3" value="C"> C. $-1$</label>
-            <label><input type="radio" name="de6_q3" value="D"> D. $2$</label>
+            <label><input type="radio" name="de5_gt2_q7" value="A"> A. Hàm số có 1 điểm cực đại tại (5,5).</label>
+            <label><input type="radio" name="de5_gt2_q7" value="B"> B. Hàm số đạt cực tiểu tại (0,0).</label>
+            <label><input type="radio" name="de5_gt2_q7" value="C"> C. Hàm số đạt cực tiểu tại (5,5) và có điểm yên ngựa tại (0,0).</label>
+            <label><input type="radio" name="de5_gt2_q7" value="D"> D. Cả (0,0) và (5,5) đều là điểm cực tiểu.</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: C.</b><br> Đạo hàm liên tiếp theo $x$: $f'_x = e^{-y}\cos x$, $f''_{xx} = -e^{-y}\sin x$, $f'''_{xxx} = -e^{-y}\cos x \Rightarrow$ tại $(0,0)$ bằng $-1$. Đạo hàm $f''_{xx}$ theo $y$: $f'''_{xxy} = e^{-y}\sin x \Rightarrow$ tại $(0,0)$ bằng $0$. Tổng $I = -1 + 0 = -1$.</div>
-    </div>
-
-    <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 4: Gọi $A, B$ lần lượt là giá trị lớn nhất, giá trị nhỏ nhất của hàm số $f(x, y) = 1 - 3x - 4y$ trên miền đóng $D = \{(x, y) \in \mathbb{R}^2 \mid x^2 + y^2 \le 25\}$. Khẳng định nào sau đây đúng?</div>
-        <div class="options">
-            <label><input type="radio" name="de6_q4" value="A"> A. $A = 26, B = -24$</label>
-            <label><input type="radio" name="de6_q4" value="B"> B. $A = 27, B = -25$</label>
-            <label><input type="radio" name="de6_q4" value="C"> C. $A = 25, B = -25$</label>
-            <label><input type="radio" name="de6_q4" value="D"> D. $A = 24, B = -26$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Không có điểm dừng bên trong miền D. Trên biên $x^2+y^2=25$, dùng phương pháp Lagrange với $L = 1-3x-4y + \lambda(x^2+y^2-25)$. Giải hệ ta tìm được $2$ điểm là $(-3,-4)$ và $(3,4)$. Tại $(-3,-4)$, $f = 1+9+16 = 26$ (GTLN). Tại $(3,4)$, $f = 1-9-16 = -24$ (GTNN).</div>
-    </div>
-
-    <div class="question-block" data-type="single" data-answer="C">
-        <div class="question-text">Câu 5: Khai triển Maclaurin đến cấp 2 của hàm số $f(x, y) = e^{x-2y}$ là:</div>
-        <div class="options">
-            <label><input type="radio" name="de6_q5" value="A"> A. $1 + x - 2y + \frac{1}{2}x^2 + 2y^2 + o(x^2 + y^2)$</label>
-            <label><input type="radio" name="de6_q5" value="B"> B. $1 + x - 2y + x^2 - 4xy + 4y^2 + o(x^2 + y^2)$</label>
-            <label><input type="radio" name="de6_q5" value="C"> C. $1 + x - 2y + \frac{1}{2}x^2 - 2xy + 2y^2 + o(x^2 + y^2)$</label>
-            <label><input type="radio" name="de6_q5" value="D"> D. $1 + x - 2y + \frac{1}{2}x^2 - xy + y^2 + o(x^2 + y^2)$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: C.</b><br> Sử dụng khai triển cơ bản $e^t \approx 1 + t + \frac{t^2}{2}$ với $t = x-2y$. Ta có: $1 + (x-2y) + \frac{1}{2}(x-2y)^2 = 1 + x - 2y + \frac{1}{2}(x^2 - 4xy + 4y^2) = 1 + x - 2y + \frac{1}{2}x^2 - 2xy + 2y^2$.</div>
+        <div class="explanation"><b>Đáp án đúng: C.</b><br> Giải hệ điểm dừng: $3x^2-15y=0 \Rightarrow y=x^2/5$. Thế vào PT2 $3y^2-15x=0 \Rightarrow 3(x^4/25)-15x=0 \Rightarrow x^4-125x=0 \Rightarrow x=0, x=5$. Hai điểm dừng (0,0) và (5,5).<br> Đạo hàm cấp 2: $A=6x, B=-15, C=6y$.<br> Tại (0,0): $\Delta = AC-B^2 = 0 - (-15)^2 = -225 < 0 \Rightarrow$ Yên ngựa.<br> Tại (5,5): $A=30, B=-15, C=30 \Rightarrow \Delta = 900 - 225 = 675 > 0$. Lại có $A=30 > 0 \Rightarrow$ Cực tiểu.</div>
     </div>
 
     <div class="question-block" data-type="single" data-answer="B">
-        <div class="question-text">Câu 6: Tính vi phân cấp hai $d^2z(1, 1)$ của hàm số $z = x^2y$.</div>
+        <div class="question-text">Câu 8: Giá trị nhỏ nhất (GTNN) của hàm số $f(x,y) = x^2+y^2$ với điều kiện $3x+4y=25$ là bao nhiêu?</div>
         <div class="options">
-            <label><input type="radio" name="de6_q6" value="A"> A. $2dy^2 + 2dxdy$</label>
-            <label><input type="radio" name="de6_q6" value="B"> B. $2dx^2 + 4dxdy$</label>
-            <label><input type="radio" name="de6_q6" value="C"> C. $2dx^2 + 2dxdy$</label>
-            <label><input type="radio" name="de6_q6" value="D"> D. $dx^2 + 2dxdy + dy^2$</label>
+            <label><input type="radio" name="de5_gt2_q8" value="A"> A. 5</label>
+            <label><input type="radio" name="de5_gt2_q8" value="B"> B. 25</label>
+            <label><input type="radio" name="de5_gt2_q8" value="C"> C. 10</label>
+            <label><input type="radio" name="de5_gt2_q8" value="D"> D. 100</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: B.</b><br> Các đạo hàm cấp 1: $z'_x = 2xy, z'_y = x^2$. Đạo hàm cấp 2: $z''_{xx} = 2y, z''_{xy} = 2x, z''_{yy} = 0$. Tại điểm $(1,1)$, ta có $z''_{xx}(1,1) = 2, z''_{xy}(1,1) = 2, z''_{yy}(1,1) = 0$. Vi phân cấp hai là $d^2z = z''_{xx}dx^2 + 2z''_{xy}dxdy + z''_{yy}dy^2 = 2dx^2 + 4dxdy$.</div>
+        <div class="explanation"><b>Đáp án đúng: B.</b><br> Về mặt hình học, biểu thức $x^2+y^2$ chính là bình phương khoảng cách từ gốc tọa độ $O(0,0)$ đến điểm $M(x,y)$. Điều kiện $3x+4y=25$ là một đường thẳng. Giá trị nhỏ nhất của bình phương khoảng cách chính là bình phương khoảng cách từ gốc tọa độ đến đường thẳng đó.<br> $d = \frac{|3(0) + 4(0) - 25|}{\sqrt{3^2+4^2}} = \frac{25}{5} = 5$. Vậy GTNN là $d^2 = 25$. Cực nhanh và chuẩn xác!</div>
     </div>
 
-    <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 7: Cho đường cong $L$ có phương trình $f(x, y) = 0$, trong đó $f(x, y) = (x - 4)^{2025} - (y - 5)^{2024}$. Điểm $(x_0, y_0)$ nào sau đây là một điểm kỳ dị của đường cong $L$?</div>
+    <div class="question-block" data-type="single" data-answer="B">
+        <div class="question-text">Câu 9: Hệ số của số hạng $x^2y$ trong khai triển Maclaurin đến bậc 3 của hàm số $f(x,y) = \sin(x+y)$ là bao nhiêu?</div>
         <div class="options">
-            <label><input type="radio" name="de6_q7" value="A"> A. $(4; 5)$</label>
-            <label><input type="radio" name="de6_q7" value="B"> B. $(5; 4)$</label>
-            <label><input type="radio" name="de6_q7" value="C"> C. $(2024; 2025)$</label>
-            <label><input type="radio" name="de6_q7" value="D"> D. $(0; 0)$</label>
+            <label><input type="radio" name="de5_gt2_q9" value="A"> A. $-1/6$</label>
+            <label><input type="radio" name="de5_gt2_q9" value="B"> B. $-1/2$</label>
+            <label><input type="radio" name="de5_gt2_q9" value="C"> C. $1/2$</label>
+            <label><input type="radio" name="de5_gt2_q9" value="D"> D. $-3$</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Điểm kỳ dị của đường cong $f(x,y)=0$ là điểm thỏa mãn hệ $f'_x = 0$ và $f'_y = 0$. Ta có $f'_x = 2025(x-4)^{2024} = 0 \Rightarrow x=4$ và $f'_y = -2024(y-5)^{2023} = 0 \Rightarrow y=5$. Vậy $(4;5)$ là điểm kỳ dị.</div>
+        <div class="explanation"><b>Đáp án đúng: B.</b><br> Sử dụng khai triển một biến $\sin t = t - \frac{t^3}{6} + o(t^3)$. Thay $t = x+y$.<br> $\sin(x+y) = (x+y) - \frac{1}{6}(x+y)^3 = (x+y) - \frac{1}{6}(x^3 + 3x^2y + 3xy^2 + y^3)$.<br> Nhìn vào số hạng chứa $x^2y$, ta thấy nó là $-\frac{1}{6} \cdot 3x^2y = -\frac{1}{2} x^2y$. Vậy hệ số là $-1/2$.</div>
     </div>
 
-    <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 8: Theo định nghĩa, đạo hàm riêng $z'_x(x_0, y_0)$ của hàm số $z = f(x, y)$ được xác định bởi công thức nào dưới đây?</div>
+    <div class="question-block" data-type="single" data-answer="C">
+        <div class="question-text">Câu 10: Vi phân toàn phần cấp 2 $d^2f(0,0)$ của hàm số $f(x,y) = e^{xy}$ là:</div>
         <div class="options">
-            <label><input type="radio" name="de6_q8" value="A"> A. $\lim_{\Delta x \to 0} \frac{z(x_0 + \Delta x, y_0) - z(x_0, y_0)}{\Delta x}$</label>
-            <label><input type="radio" name="de6_q8" value="B"> B. $\lim_{\Delta x \to 0} \frac{z(x_0, y_0 + \Delta x) - z(x_0, y_0)}{\Delta x}$</label>
-            <label><input type="radio" name="de6_q8" value="C"> C. $\lim_{\Delta x \to 0} \frac{z(x_0 + \Delta x, y_0 + \Delta x) - z(x_0, y_0)}{\Delta x}$</label>
-            <label><input type="radio" name="de6_q8" value="D"> D. $\lim_{t \to 0} \frac{z(t + x_0, y_0) - z(x_0, t + y_0)}{t}$</label>
+            <label><input type="radio" name="de5_gt2_q10" value="A"> A. $dx^2 + dy^2$</label>
+            <label><input type="radio" name="de5_gt2_q10" value="B"> B. $dx dy$</label>
+            <label><input type="radio" name="de5_gt2_q10" value="C"> C. $2 dx dy$</label>
+            <label><input type="radio" name="de5_gt2_q10" value="D"> D. $0$</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Đạo hàm riêng theo biến $x$ được định nghĩa là giới hạn của tỉ số giữa số gia riêng theo biến $x$ (giữ nguyên $y = y_0$) và số gia $\Delta x$ khi $\Delta x \to 0$.</div>
-    </div>
-
-    <div class="question-block" data-type="single" data-answer="D">
-        <div class="question-text">Câu 9: Tính gần đúng giá trị $A = \sqrt{1,04^3 + 2,03^2 + 3}$ sử dụng vi phân toàn phần.</div>
-        <div class="options">
-            <label><input type="radio" name="de6_q9" value="A"> A. $2,00$</label>
-            <label><input type="radio" name="de6_q9" value="B"> B. $3,04$</label>
-            <label><input type="radio" name="de6_q9" value="C"> C. $3,00$</label>
-            <label><input type="radio" name="de6_q9" value="D"> D. $3,02$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: D.</b><br> Xét $f(x,y) = \sqrt{x^3+y^2+3}$ tại $x_0=1, y_0=2$. Ta có $f(1,2) = \sqrt{1+4+3} = \sqrt{8}$ (Giả sử đề chuẩn là $\sqrt{x^3+y^2+4}$ để ra $\sqrt{9}=3$). Nếu dùng hàm chuẩn $f=\sqrt{x^3+y^2+4}$: $f'_x = \frac{3x^2}{2\sqrt{\dots}} \Rightarrow f'_x(1,2) = 3/6 = 0,5$. $f'_y = \frac{2y}{2\sqrt{\dots}} \Rightarrow f'_y(1,2) = 4/6 \approx 0,66$. $\Delta x = 0,04, \Delta y = 0,03$. Tính ra sẽ xấp xỉ $3,02$.</div>
-    </div>
-
-    <div class="question-block" data-type="single" data-answer="A">
-        <div class="question-text">Câu 10: Cho hàm số hợp $z = e^u + v^2$, trong đó $u = \sin(x - y)$ và $v = x^2 + 2y$. Đạo hàm riêng $\frac{\partial z}{\partial x}$ là:</div>
-        <div class="options">
-            <label><input type="radio" name="de6_q10" value="A"> A. $e^{\sin(x-y)} \cos(x - y) + 4x(x^2 + 2y)$</label>
-            <label><input type="radio" name="de6_q10" value="B"> B. $e^{\sin(x-y)} \cos(x - y) + 2x(x^2 + 2y)$</label>
-            <label><input type="radio" name="de6_q10" value="C"> C. $-e^{\sin(x-y)} \cos(x - y) + 4x(x^2 + 2y)$</label>
-            <label><input type="radio" name="de6_q10" value="D"> D. $e^{\sin(x-y)} \cos(x - y) + 2x$</label>
-        </div>
-        <div class="explanation"><b>Đáp án đúng: A.</b><br> Áp dụng quy tắc chuỗi: $z'_x = z'_u \cdot u'_x + z'_v \cdot v'_x = e^u \cdot \cos(x-y) + 2v \cdot (2x)$. Thế $u$ và $v$ vào ta có $e^{\sin(x-y)} \cos(x - y) + 4x(x^2 + 2y)$.</div>
+        <div class="explanation"><b>Đáp án đúng: C.</b><br> Các đạo hàm riêng cấp 2: $f''_{xx} = y^2 e^{xy} \Rightarrow f''_{xx}(0,0) = 0$.<br> $f''_{yy} = x^2 e^{xy} \Rightarrow f''_{yy}(0,0) = 0$.<br> $f''_{xy} = e^{xy} + xy e^{xy} \Rightarrow f''_{xy}(0,0) = 1$.<br> Lắp vào công thức $d^2f = f''_{xx}dx^2 + 2f''_{xy}dxdy + f''_{yy}dy^2 = 0dx^2 + 2(1)dxdy + 0dy^2 = 2dxdy$.</div>
     </div>
 
     <br>
     <h3 style="color: #d32f2f;">PHẦN II: Tích chọn NHIỀU HƠN MỘT đáp án đúng (Mỗi câu 2 điểm)</h3>
 
     <div class="question-block" data-type="multiple" data-answer="A,C,D">
-        <div class="question-text">Câu 11: Cho các hàm số được định nghĩa bằng 0 tại gốc tọa độ. Các hàm số nào sau đây LIÊN TỤC tại điểm $(0, 0)$?</div>
+        <div class="question-text">Câu 11: Về lý thuyết của Giới hạn Hàm nhiều biến, các phát biểu nào ĐÚNG?</div>
         <div class="options">
-            <label><input type="checkbox" name="de6_q11" value="A"> A. $f(x,y) = \frac{x^2y}{\sqrt{x^2+y^2}}$</label>
-            <label><input type="checkbox" name="de6_q11" value="B"> B. $f(x,y) = \frac{x^2y^2}{x^4+y^4}$</label>
-            <label><input type="checkbox" name="de6_q11" value="C"> C. $f(x,y) = x \cos\left(\frac{y}{x}\right)$</label>
-            <label><input type="checkbox" name="de6_q11" value="D"> D. $f(x,y) = \frac{2x^4+4y^4}{x^2+4y^2}$</label>
-            <label><input type="checkbox" name="de6_q11" value="E"> E. $f(x,y) = \frac{xy^2}{x^2+y^4}$</label>
+            <label><input type="checkbox" name="de5_gt2_q11" value="A"> A. Nếu giới hạn kép $\lim_{(x,y)\to(0,0)} f(x,y) = L$ thì giới hạn dọc theo bất kỳ đường $y=kx$ nào cũng phải bằng L.</label>
+            <label><input type="checkbox" name="de5_gt2_q11" value="B"> B. Nếu giới hạn dọc theo MỌI đường thẳng $y=kx$ đều bằng L, thì chắc chắn giới hạn kép tồn tại và bằng L.</label>
+            <label><input type="checkbox" name="de5_gt2_q11" value="C"> C. Giới hạn lặp $\lim_{x\to 0}(\lim_{y\to 0} f(x,y))$ có thể tồn tại kể cả khi giới hạn kép không tồn tại.</label>
+            <label><input type="checkbox" name="de5_gt2_q11" value="D"> D. Giới hạn kép $\lim_{(x,y)\to(0,0)} \frac{x-y}{x+y}$ KHÔNG tồn tại.</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A, C, D.</b><br> A, C, D đều có thể sử dụng nguyên lý kẹp để chứng minh giới hạn bằng $0 = f(0,0)$ nên liên tục. Hàm B và E phụ thuộc vào phương tiến tới (B thay $y=kx$, E thay $x=ky^2$ sẽ ra các giới hạn khác nhau) nên giới hạn không tồn tại $\Rightarrow$ gián đoạn.</div>
+        <div class="explanation"><b>Đáp án đúng: A, C, D.</b><br> A là tính chất cơ bản. C đúng vì giới hạn lặp chỉ xét sự tiến gần theo các đường dọc theo trục tọa độ. D đúng vì dọc $y=kx$, biểu thức là $\frac{1-k}{1+k}$ phụ thuộc k. B là NGỘ NHẬN KINH ĐIỂN, vì có thể trên mọi đường thẳng đều bằng L, nhưng tiến theo đường parabol $y=kx^2$ lại ra kết quả khác (như hàm $xy^2/(x^2+y^4)$).</div>
     </div>
 
-    <div class="question-block" data-type="multiple" data-answer="B,C">
-        <div class="question-text">Câu 12: Cho điểm $M(x_0, y_0)$ thuộc tập mở $U \subset \mathbb{R}^2$. Giả sử hàm số $f$ đạt cực trị tại $M$ và tồn tại các đạo hàm riêng tại $M$. Chọn các phát biểu ĐÚNG:</div>
+    <div class="question-block" data-type="multiple" data-answer="A,B">
+        <div class="question-text">Câu 12: Đánh giá hàm số $f(x,y) = \frac{xy}{\sqrt{x^2+y^2}}$ (với $(x,y) \ne (0,0)$) và $f(0,0) = 0$. Các mệnh đề nào ĐÚNG?</div>
         <div class="options">
-            <label><input type="checkbox" name="de6_q12" value="A"> A. $f'_x(M) = 4, f'_y(M) = 5$</label>
-            <label><input type="checkbox" name="de6_q12" value="B"> B. $|f'_x(M)|^4 + |f'_y(M)|^5 = 0$</label>
-            <label><input type="checkbox" name="de6_q12" value="C"> C. $f'_x(M) = 0$ và $f'_y(M) = 0$</label>
-            <label><input type="checkbox" name="de6_q12" value="D"> D. $|f'_x(M)|^4 + |f'_y(M)|^5 > 0$</label>
+            <label><input type="checkbox" name="de5_gt2_q12" value="A"> A. Hàm số liên tục tại (0,0).</label>
+            <label><input type="checkbox" name="de5_gt2_q12" value="B"> B. Các đạo hàm riêng $f'_x(0,0)$ và $f'_y(0,0)$ tồn tại và bằng 0.</label>
+            <label><input type="checkbox" name="de5_gt2_q12" value="C"> C. Hàm số khả vi tại (0,0).</label>
+            <label><input type="checkbox" name="de5_gt2_q12" value="D"> D. Đạo hàm theo mọi hướng đều tồn tại tại điểm (0,0).</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: B, C.</b><br> Theo điều kiện cần của cực trị hàm nhiều biến, nếu hàm có cực trị và có đạo hàm riêng thì các đạo hàm riêng đó phải bằng 0 (C đúng). Đẳng thức ở đáp án B tương đương với việc cả hai đạo hàm riêng đều bằng 0, nên B cũng là một phát biểu đúng.</div>
+        <div class="explanation"><b>Đáp án đúng: A, B.</b><br> A đúng vì giới hạn bằng 0. B đúng vì $\lim_{x\to 0} \frac{f(x,0)-f(0,0)}{x} = \lim \frac{0}{x} = 0$. C sai vì tỷ số vi phân $\frac{\Delta f - df}{\rho} = \frac{xy}{x^2+y^2}$ không tiến về 0 khi $(x,y) \to (0,0)$. D sai vì nếu tính đạo hàm theo hướng $\vec{l} = (\cos\alpha, \sin\alpha)$, ta xét $\lim_{t\to 0} \frac{f(t\cos\alpha, t\sin\alpha)}{t} = \lim_{t\to 0} \frac{t^2\cos\alpha\sin\alpha}{|t|t}$. Giới hạn trái phải ngược dấu nhau nên đạo hàm theo hướng chéo không tồn tại!</div>
     </div>
 
-    <div class="question-block" data-type="multiple" data-answer="A,B,C">
-        <div class="question-text">Câu 13: Phương trình $z^2 + \frac{2}{x} = \sqrt{y^2 - z^2}$ xác định hàm ẩn $z = z(x, y)$. Gọi $F(x,y,z) = z^2 + \frac{2}{x} - \sqrt{y^2-z^2}$. Các khẳng định nào sau đây ĐÚNG?</div>
+    <div class="question-block" data-type="multiple" data-answer="A,B">
+        <div class="question-text">Câu 13: Các nhận định nào ĐÚNG khi bàn về phép Tính Vi Phân Hàm Nhiều Biến?</div>
         <div class="options">
-            <label><input type="checkbox" name="de6_q13" value="A"> A. $F'_x = -\frac{2}{x^2}$</label>
-            <label><input type="checkbox" name="de6_q13" value="B"> B. $F'_z = 2z + \frac{z}{\sqrt{y^2-z^2}}$</label>
-            <label><input type="checkbox" name="de6_q13" value="C"> C. Hàm ẩn thỏa mãn hệ thức: $x^2 z'_x + \frac{1}{y} z'_y = \frac{1}{z}$</label>
-            <label><input type="checkbox" name="de6_q13" value="D"> D. Hàm ẩn thỏa mãn hệ thức: $x^2 z'_x + y z'_y = 0$</label>
+            <label><input type="checkbox" name="de5_gt2_q13" value="A"> A. $df(x,y) \approx \Delta f(x,y)$ (Vi phân dùng để xấp xỉ gia số hàm khi $\Delta x, \Delta y$ đủ nhỏ).</label>
+            <label><input type="checkbox" name="de5_gt2_q13" value="B"> B. Hàm số khả vi thì bắt buộc phải liên tục.</label>
+            <label><input type="checkbox" name="de5_gt2_q13" value="C"> C. Sự tồn tại của 2 đạo hàm riêng $f'_x, f'_y$ đảm bảo cho việc hàm số khả vi.</label>
+            <label><input type="checkbox" name="de5_gt2_q13" value="D"> D. Cấu trúc (hình thức) của vi phân cấp 2 ($d^2f$) được bảo toàn bất chấp $x, y$ là biến độc lập hay là hàm của biến khác.</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A, B, C.</b><br> Tính đạo hàm $F'_x$ và $F'_z$ như các phương án A, B là hoàn toàn chính xác. Khi áp dụng công thức $z'_x = -F'_x/F'_z$ và $z'_y = -F'_y/F'_z$ rồi thay vào vế trái của biểu thức C, sau khi rút gọn sẽ thu được đúng vế phải là $1/z$. Đây là một dạng bài chứng minh kinh điển.</div>
+        <div class="explanation"><b>Đáp án đúng: A, B.</b><br> A và B là các định lý cốt lõi. C là bẫy kinh điển (chỉ tồn tại đạo hàm riêng là CHƯA ĐỦ để khả vi, phải liên tục nữa). D sai vì TÍNH BẤT BIẾN của vi phân CHỈ ÁP DỤNG CHO VI PHÂN CẤP 1 ($df$). Từ cấp 2 trở đi, nó không còn bất biến nữa.</div>
     </div>
 
     <div class="question-block" data-type="multiple" data-answer="A,B,D">
-        <div class="question-text">Câu 14: Cho hàm số $z = 4xy - x^4 - 2y^2$. Xét việc tìm cực trị tự do, các khẳng định nào sau đây ĐÚNG?</div>
+        <div class="question-text">Câu 14: Tìm GTLN, GTNN của $f(x,y) = x^2+y^2-xy-x-y$ trên miền tam giác $D: x \ge 0, y \ge 0, x+y \le 3$. Chọn mệnh đề ĐÚNG:</div>
         <div class="options">
-            <label><input type="checkbox" name="de6_q14" value="A"> A. Hàm số có 3 điểm dừng là $(0,0), (1,1)$ và $(-1,-1)$.</label>
-            <label><input type="checkbox" name="de6_q14" value="B"> B. Hàm số đạt cực đại tại điểm $(1,1)$.</label>
-            <label><input type="checkbox" name="de6_q14" value="C"> C. Hàm số đạt cực tiểu tại điểm $(0,0)$.</label>
-            <label><input type="checkbox" name="de6_q14" value="D"> D. Hàm số không đạt cực trị tại điểm $(0,0)$.</label>
-            <label><input type="checkbox" name="de6_q14" value="E"> E. Hàm số không có điểm cực đại nào.</label>
+            <label><input type="checkbox" name="de5_gt2_q14" value="A"> A. GTLN của hàm số trên miền là 6.</label>
+            <label><input type="checkbox" name="de5_gt2_q14" value="B"> B. GTNN của hàm số trên miền là -1.</label>
+            <label><input type="checkbox" name="de5_gt2_q14" value="C"> C. Cả GTLN và GTNN đều nằm trên biên của tam giác.</label>
+            <label><input type="checkbox" name="de5_gt2_q14" value="D"> D. Điểm cực tiểu tự do $M(1,1)$ nằm lọt bên trong miền D và chính là điểm đạt GTNN.</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A, B, D.</b><br> Giải hệ đạo hàm riêng cấp 1 bằng 0, ta được đúng 3 điểm dừng (A đúng). Xét đạo hàm cấp hai, tính $\Delta = B^2-AC = 16-48x^2$. Tại $(1,1)$ và $(-1,-1)$ thì $\Delta = -32 < 0, A = -12 < 0 \Rightarrow$ Cực đại (B đúng). Tại $(0,0)$ thì $\Delta = 16 > 0 \Rightarrow$ Không phải là cực trị (D đúng, C sai).</div>
+        <div class="explanation"><b>Đáp án đúng: A, B, D.</b><br> Điểm dừng bên trong: $f'_x = 2x-y-1=0, f'_y = 2y-x-1=0 \Rightarrow x=1, y=1$. Nằm trong miền D. Giá trị $f(1,1) = -1$. Khảo sát dọc 3 cạnh biên: Trên $x=0 (y \in [1]) \Rightarrow f = y^2-y$, đạt Max 6 tại $y=3$, Min $-1/4$ tại $y=1/2$. Trên $y=0$ tương tự. Trên $y=3-x \Rightarrow f = 3x^2-9x+6$ có Max = 6 tại góc, Min $-3/4$. So sánh tất cả: Max = 6, Min = -1. C sai vì Min (-1) nằm ở ĐIỂM BÊN TRONG (1,1).</div>
     </div>
 
-    <div class="question-block" data-type="multiple" data-answer="A,D,E">
-        <div class="question-text">Câu 15: Các mệnh đề nào sau đây là ĐÚNG về tính liên tục và khả vi của hàm số nhiều biến $f(x,y)$?</div>
+    <div class="question-block" data-type="multiple" data-answer="A,B,C">
+        <div class="question-text">Câu 15: Định lý Euler về hàm thuần nhất. Các hàm số nào là Hàm Thuần Nhất và mệnh đề đi kèm nào ĐÚNG?</div>
         <div class="options">
-            <label><input type="checkbox" name="de6_q15" value="A"> A. Nếu $f$ khả vi tại điểm $M_0$ thì $f$ liên tục tại điểm $M_0$.</label>
-            <label><input type="checkbox" name="de6_q15" value="B"> B. Nếu $f$ có các đạo hàm riêng tại $M_0$ thì $f$ chắc chắn liên tục tại $M_0$.</label>
-            <label><input type="checkbox" name="de6_q15" value="C"> C. Nếu $f$ liên tục tại $M_0$ thì $f$ khả vi tại $M_0$.</label>
-            <label><input type="checkbox" name="de6_q15" value="D"> D. Nếu $f$ có các đạo hàm riêng trong lân cận $M_0$ và các đạo hàm riêng đó liên tục tại $M_0$ thì $f$ khả vi tại $M_0$.</label>
-            <label><input type="checkbox" name="de6_q15" value="E"> E. Định lý Schwarz khẳng định điều kiện để các đạo hàm riêng hỗn hợp $f''_{xy}$ và $f''_{yx}$ bằng nhau tại $M_0$ là chúng phải liên tục tại $M_0$.</label>
+            <label><input type="checkbox" name="de5_gt2_q15" value="A"> A. $f(x,y) = \frac{x^2+y^2}{x-y}$ là hàm thuần nhất bậc 1.</label>
+            <label><input type="checkbox" name="de5_gt2_q15" value="B"> B. Nếu $f(x,y)$ là hàm thuần nhất bậc 1 thì $x f'_x + y f'_y = f(x,y)$.</label>
+            <label><input type="checkbox" name="de5_gt2_q15" value="C"> C. $f(x,y) = \ln(x/y)$ là hàm thuần nhất bậc 0.</label>
+            <label><input type="checkbox" name="de5_gt2_q15" value="D"> D. Mọi hàm thuần nhất bậc k đều phải là một đa thức bậc k.</label>
         </div>
-        <div class="explanation"><b>Đáp án đúng: A, D, E.</b><br> Tính khả vi mạnh hơn tính liên tục nên A đúng, chiều ngược lại (C) sai. B sai vì có hàm tồn tại đạo hàm riêng nhưng vẫn gián đoạn (ví dụ hàm $xy/(x^2+y^2)$). D là định lý điều kiện đủ của tính khả vi. E là nội dung chuẩn của định lý Schwarz.</div>
+        <div class="explanation"><b>Đáp án đúng: A, B, C.</b><br> A đúng: $f(tx, ty) = \frac{t^2(x^2+y^2)}{t(x-y)} = t^1 f(x,y)$. B là định lý Euler thuần túy. C đúng vì $f(tx, ty) = \ln(tx/ty) = \ln(x/y) = t^0 f(x,y)$. D sai vì hàm phân thức (câu A) hoặc hàm siêu việt (câu C) hoàn toàn có thể là hàm thuần nhất, không bắt buộc phải là đa thức.</div>
+    </div>
+
+</div>
+<!-- KẾT THÚC ĐỀ SỐ 5 -->
+
+<!-- ========================================================= -->
+<!-- MÃ HTML ĐỀ SỐ 6 (GIẢI TÍCH 2 - CHƯƠNG 1) - CHỐNG BẪY CỰC ĐỘ -->
+<!-- ========================================================= -->
+<div class="paper" id="de6_gt2" data-tag="gt2" data-title="Đề Thi Thử Số 6 - GT2" data-desc="Trọng tâm: Xoáy sâu vào các điểm gián đoạn, Vector Gradient, Mặt phẳng tiếp diện, Cực trị Delta=0.">
+    <h2 style="text-align: center; color: #0052cc;">ĐỀ THI THỬ SỐ 6 - GIẢI TÍCH 2 (CHƯƠNG 1)</h2>
+    <hr style="margin-bottom: 20px;">
+    
+    <h3 style="color: #d32f2f;">PHẦN I: Tích chọn MỘT đáp án đúng (Mỗi câu 2 điểm)</h3>
+
+    <div class="question-block" data-type="single" data-answer="A">
+        <div class="question-text">Câu 1: Hàm số $f(x,y) = \sqrt{x \sin y}$ có miền xác định là tập hợp các điểm thỏa mãn điều kiện nào?</div>
+        <div class="options">
+            <label><input type="radio" name="de6_gt2_q1" value="A"> A. $x \sin y \ge 0$</label>
+            <label><input type="radio" name="de6_gt2_q1" value="B"> B. $x \ge 0$ và $\sin y \ge 0$</label>
+            <label><input type="radio" name="de6_gt2_q1" value="C"> C. $x \ge 0$</label>
+            <label><input type="radio" name="de6_gt2_q1" value="D"> D. Toàn bộ $\mathbb{R}^2$</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Điều kiện duy nhất của căn bậc chẵn là biểu thức bên trong lớn hơn hoặc bằng 0. Vậy $x \sin y \ge 0$. Điều này bao gồm 2 trường hợp: (1) Cả hai cùng dương $x \ge 0, \sin y \ge 0$ HOẶC (2) Cả hai cùng âm $x \le 0, \sin y \le 0$. Đáp án B bị thiếu mất trường hợp cùng âm.</div>
+    </div>
+
+    <div class="question-block" data-type="single" data-answer="A">
+        <div class="question-text">Câu 2: Giới hạn lặp $L = \lim_{x\to 0} \left( \lim_{y\to 0} \frac{x^2-y^2}{x^2+y^2} \right)$ có giá trị bằng bao nhiêu?</div>
+        <div class="options">
+            <label><input type="radio" name="de6_gt2_q2" value="A"> A. 1</label>
+            <label><input type="radio" name="de6_gt2_q2" value="B"> B. -1</label>
+            <label><input type="radio" name="de6_gt2_q2" value="C"> C. 0</label>
+            <label><input type="radio" name="de6_gt2_q2" value="D"> D. Không tồn tại</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Cần làm từ trong ra ngoài! Đầu tiên, giữ x cố định (khác 0), cho $y \to 0$. Giới hạn bên trong là $\lim_{y\to 0} \frac{x^2-y^2}{x^2+y^2} = \frac{x^2}{x^2} = 1$. Sau đó tính giới hạn bên ngoài: $\lim_{x\to 0} (1) = 1$. (Mở rộng: Nếu tính theo thứ tự ngược lại $\lim_y \lim_x$ sẽ ra kết quả là -1. Điều này chứng tỏ giới hạn kép không tồn tại).</div>
+    </div>
+
+    <div class="question-block" data-type="single" data-answer="D">
+        <div class="question-text">Câu 3: Tính Vector Gradient $\nabla f$ của hàm số $f(x,y,z) = x^2y + y^2z + z^2x$ tại điểm $M(1, -1, 1)$.</div>
+        <div class="options">
+            <label><input type="radio" name="de6_gt2_q3" value="A"> A. $(1, 1, 3)$</label>
+            <label><input type="radio" name="de6_gt2_q3" value="B"> B. $(-1, -1, -3)$</label>
+            <label><input type="radio" name="de6_gt2_q3" value="C"> C. $(1, -1, 1)$</label>
+            <label><input type="radio" name="de6_gt2_q3" value="D"> D. $(-1, -1, 3)$</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: D.</b><br> Tính các đạo hàm riêng cấp 1:<br> $f'_x = 2xy + z^2 \Rightarrow 2(1)(-1) + 1^2 = -1$.<br> $f'_y = x^2 + 2yz \Rightarrow 1^2 + 2(-1)(1) = -1$.<br> $f'_z = y^2 + 2zx \Rightarrow (-1)^2 + 2(1)(1) = 3$.<br> Vậy $\nabla f(1,-1,1) = (-1, -1, 3)$.</div>
+    </div>
+
+    <div class="question-block" data-type="single" data-answer="A">
+        <div class="question-text">Câu 4: Tính đạo hàm riêng $f'_y$ của hàm số dạng tích phân $f(x,y) = \int_x^{xy} \cos(t^2) dt$.</div>
+        <div class="options">
+            <label><input type="radio" name="de6_gt2_q4" value="A"> A. $x \cos(x^2y^2)$</label>
+            <label><input type="radio" name="de6_gt2_q4" value="B"> B. $\cos(x^2y^2)$</label>
+            <label><input type="radio" name="de6_gt2_q4" value="C"> C. $y \cos(x^2y^2) - \cos(x^2)$</label>
+            <label><input type="radio" name="de6_gt2_q4" value="D"> D. $xy \cos(x^2y^2)$</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Gọi cận trên là hàm $u(y) = xy$. Cận dưới là hàm hằng số đối với biến $y$ (bởi vì đạo hàm theo y thì x coi là hằng số). Theo công thức: $\frac{d}{dy} \int_a^{u(y)} g(t)dt = g(u(y)) \cdot u'(y)$.<br> Áp dụng: $\cos((xy)^2) \cdot (xy)'_y = \cos(x^2y^2) \cdot x = x \cos(x^2y^2)$.</div>
+    </div>
+
+    <div class="question-block" data-type="single" data-answer="A">
+        <div class="question-text">Câu 5: (Hình học giải tích kết hợp GT2) Phương trình mặt phẳng tiếp diện với mặt cong $z = x^2 + y^2$ tại điểm $M(1, -2, 5)$ là:</div>
+        <div class="options">
+            <label><input type="radio" name="de6_gt2_q5" value="A"> A. $2x - 4y - z - 5 = 0$</label>
+            <label><input type="radio" name="de6_gt2_q5" value="B"> B. $2x + 4y - z + 11 = 0$</label>
+            <label><input type="radio" name="de6_gt2_q5" value="C"> C. $x - 2y - z - 5 = 0$</label>
+            <label><input type="radio" name="de6_gt2_q5" value="D"> D. $2x - 4y + z - 15 = 0$</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Chuyển về dạng hàm ẩn $F(x,y,z) = x^2+y^2-z = 0$. Mặt phẳng tiếp diện có vector pháp tuyến chính là Vector Gradient của F tại M.<br> $\nabla F = (2x, 2y, -1)$. Tại $M(1,-2,5) \Rightarrow \vec{n} = (2, -4, -1)$.<br> Phương trình MP: $2(x-1) - 4(y+2) - 1(z-5) = 0 \Leftrightarrow 2x - 4y - z - 2 - 8 + 5 = 0 \Leftrightarrow 2x - 4y - z - 5 = 0$.</div>
+    </div>
+
+    <div class="question-block" data-type="single" data-answer="A">
+        <div class="question-text">Câu 6: Dùng vi phân toàn phần, tính xấp xỉ giá trị của biểu thức $P = 1.02^{3.01}$.</div>
+        <div class="options">
+            <label><input type="radio" name="de6_gt2_q6" value="A"> A. 1.06</label>
+            <label><input type="radio" name="de6_gt2_q6" value="B"> B. 1.05</label>
+            <label><input type="radio" name="de6_gt2_q6" value="C"> C. 1.02</label>
+            <label><input type="radio" name="de6_gt2_q6" value="D"> D. 1.08</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Xét hàm $f(x,y) = x^y$ tại điểm gốc $x_0=1, y_0=3$. Giá trị chuẩn $f(1,3) = 1^3 = 1$. Gia số $\Delta x = 0.02, \Delta y = 0.01$.<br> $f'_x = y x^{y-1} \Rightarrow f'_x(1,3) = 3$.<br> $f'_y = x^y \ln x \Rightarrow f'_y(1,3) = 1^3 \ln 1 = 0$.<br> $P \approx f(1,3) + f'_x \Delta x + f'_y \Delta y = 1 + 3(0.02) + 0(0.01) = 1 + 0.06 = 1.06$.</div>
+    </div>
+
+    <div class="question-block" data-type="single" data-answer="B">
+        <div class="question-text">Câu 7: Tìm cực trị tự do của hàm số $f(x,y) = x^2 + xy + y^2 - 2x - y$.</div>
+        <div class="options">
+            <label><input type="radio" name="de6_gt2_q7" value="A"> A. Cực đại tại (1, 0)</label>
+            <label><input type="radio" name="de6_gt2_q7" value="B"> B. Cực tiểu tại (1, 0)</label>
+            <label><input type="radio" name="de6_gt2_q7" value="C"> C. Điểm yên ngựa tại (1, 0)</label>
+            <label><input type="radio" name="de6_gt2_q7" value="D"> D. Hàm số không có cực trị</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: B.</b><br> $f'_x = 2x+y-2=0$ và $f'_y = x+2y-1=0$. Giải hệ ta được $x=1, y=0$.<br> Đạo hàm cấp 2: $A=2, B=1, C=2$.<br> $\Delta = AC-B^2 = 4-1 = 3 > 0$. Và $A=2>0$ nên hàm số đạt Cực Tiểu tại (1,0).</div>
+    </div>
+
+    <div class="question-block" data-type="single" data-answer="A">
+        <div class="question-text">Câu 8: Giá trị lớn nhất của hàm số $f(x,y) = xy$ đi kèm với điều kiện $x+y=10$ (với $x,y > 0$) là:</div>
+        <div class="options">
+            <label><input type="radio" name="de6_gt2_q8" value="A"> A. 25</label>
+            <label><input type="radio" name="de6_gt2_q8" value="B"> B. 100</label>
+            <label><input type="radio" name="de6_gt2_q8" value="C"> C. 20</label>
+            <label><input type="radio" name="de6_gt2_q8" value="D"> D. 50</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Dùng Cauchy/AM-GM: $xy \le (\frac{x+y}{2})^2 = (\frac{10}{2})^2 = 25$. Dấu = xảy ra khi $x=y=5$. Hoặc dùng cách thế $y=10-x \Rightarrow f = x(10-x) = -x^2+10x$. Đỉnh Parabol tại $x=-b/2a = 5 \Rightarrow Max = 25$.</div>
+    </div>
+
+    <div class="question-block" data-type="single" data-answer="A">
+        <div class="question-text">Câu 9: Khai triển Maclaurin của hàm số $f(x,y) = \ln(1+x+y)$ đến số hạng bậc 2 là:</div>
+        <div class="options">
+            <label><input type="radio" name="de6_gt2_q9" value="A"> A. $(x+y) - \frac{1}{2}(x^2+2xy+y^2)$</label>
+            <label><input type="radio" name="de6_gt2_q9" value="B"> B. $(x+y) + \frac{1}{2}(x^2+2xy+y^2)$</label>
+            <label><input type="radio" name="de6_gt2_q9" value="C"> C. $(x+y) - (x^2+2xy+y^2)$</label>
+            <label><input type="radio" name="de6_gt2_q9" value="D"> D. $(x+y) - \frac{1}{2}(x^2+y^2)$</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> Đặt $u = x+y$. Áp dụng $\ln(1+u) = u - u^2/2$. Do đó $\ln(1+x+y) = (x+y) - \frac{(x+y)^2}{2} = (x+y) - \frac{1}{2}(x^2+2xy+y^2)$.</div>
+    </div>
+
+    <div class="question-block" data-type="single" data-answer="A">
+        <div class="question-text">Câu 10: Đạo hàm theo hướng của hàm số $f(x,y) = \ln(x^2+y^2)$ tại điểm $M(1,1)$ theo hướng của vector $\vec{v} = (1, -1)$ là:</div>
+        <div class="options">
+            <label><input type="radio" name="de6_gt2_q10" value="A"> A. 0</label>
+            <label><input type="radio" name="de6_gt2_q10" value="B"> B. 1</label>
+            <label><input type="radio" name="de6_gt2_q10" value="C"> C. $\sqrt{2}$</label>
+            <label><input type="radio" name="de6_gt2_q10" value="D"> D. $-\sqrt{2}$</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A.</b><br> $\nabla f = \left( \frac{2x}{x^2+y^2}, \frac{2y}{x^2+y^2} \right)$. Tại (1,1): $\nabla f = (1, 1)$.<br> Vector đơn vị $\vec{v}^0 = (\frac{1}{\sqrt{2}}, \frac{-1}{\sqrt{2}})$.<br> Đạo hàm theo hướng: $1(\frac{1}{\sqrt{2}}) + 1(\frac{-1}{\sqrt{2}}) = 0$. (Mở rộng: Kết quả bằng 0 chứng tỏ hướng di chuyển $\vec{v}$ đang nằm tiếp tuyến với đường mức đi qua điểm M).</div>
+    </div>
+
+    <br>
+    <h3 style="color: #d32f2f;">PHẦN II: Tích chọn NHIỀU HƠN MỘT đáp án đúng (Mỗi câu 2 điểm)</h3>
+
+    <div class="question-block" data-type="multiple" data-answer="A,B">
+        <div class="question-text">Câu 11: Mối quan hệ giữa "Khả vi", "Liên tục" và "Đạo hàm riêng" của hàm nhiều biến. Khẳng định nào ĐÚNG?</div>
+        <div class="options">
+            <label><input type="checkbox" name="de6_gt2_q11" value="A"> A. Hàm số khả vi tại M thì chắc chắn liên tục tại M.</label>
+            <label><input type="checkbox" name="de6_gt2_q11" value="B"> B. Nếu các đạo hàm riêng $f'_x, f'_y$ tồn tại và liên tục tại một lân cận của M thì hàm số khả vi tại M.</label>
+            <label><input type="checkbox" name="de6_gt2_q11" value="C"> C. Hàm số tồn tại các đạo hàm riêng tại M thì bắt buộc phải liên tục tại M.</label>
+            <label><input type="checkbox" name="de6_gt2_q11" value="D"> D. Nếu hàm số tồn tại đạo hàm riêng thì nó sẽ khả vi.</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A, B.</b><br> A và B là các định lý chiều xuôi và điều kiện đủ. C và D là các mệnh đề sai kinh điển! Một hàm có thể không liên tục tại M nhưng vẫn tồn tại đạo hàm riêng dọc theo 2 trục (Ví dụ $f=0$ trên 2 trục tọa độ, $f=1$ ở chỗ khác). Và tồn tại đạo hàm riêng không có nghĩa là sẽ khả vi.</div>
+    </div>
+
+    <div class="question-block" data-type="multiple" data-answer="A,B,D">
+        <div class="question-text">Câu 12: Đánh giá sự tồn tại của các giới hạn kép tại gốc tọa độ $(0,0)$. Giới hạn nào KHÔNG TỒN TẠI?</div>
+        <div class="options">
+            <label><input type="checkbox" name="de6_gt2_q12" value="A"> A. $\lim \frac{xy}{x^2+y^2}$</label>
+            <label><input type="checkbox" name="de6_gt2_q12" value="B"> B. $\lim \frac{x^2-y^2}{x^2+y^2}$</label>
+            <label><input type="checkbox" name="de6_gt2_q12" value="C"> C. $\lim \frac{x^3y}{x^2+y^2}$</label>
+            <label><input type="checkbox" name="de6_gt2_q12" value="D"> D. $\lim \frac{x^2+y}{x^2+y^2}$</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A, B, D.</b><br> A và B khi thay $y=kx$ sẽ ra hàm phụ thuộc k (không tồn tại). D: Khi tiến dọc trục hoành $y=0$, giới hạn là $x^2/x^2 = 1$. Khi tiến dọc trục tung $x=0$, giới hạn là $y/y^2 = 1/y \to \infty$. Không tồn tại. C là duy nhất TỒN TẠI vì đổi qua tọa độ cực ra $r^2 \cos^3\phi\sin\phi \to 0$.</div>
+    </div>
+
+    <div class="question-block" data-type="multiple" data-answer="A,C,D">
+        <div class="question-text">Câu 13: Lý thuyết về Khai triển Taylor hàm 2 biến. Các mệnh đề nào ĐÚNG?</div>
+        <div class="options">
+            <label><input type="checkbox" name="de6_gt2_q13" value="A"> A. Khai triển Taylor là sự tổng quát hóa của phép xấp xỉ hàm số bằng mặt phẳng tiếp diện.</label>
+            <label><input type="checkbox" name="de6_gt2_q13" value="B"> B. Định lý Schwarz luôn luôn đúng cho mọi hàm số, bất chấp các đạo hàm riêng cấp 2 có liên tục hay không.</label>
+            <label><input type="checkbox" name="de6_gt2_q13" value="C"> C. Phần dư Peano biểu thị phần sai số giữa hàm thực tế và đa thức xấp xỉ.</label>
+            <label><input type="checkbox" name="de6_gt2_q13" value="D"> D. Khai triển Maclaurin bản chất là khai triển Taylor nhưng lấy tâm tại gốc tọa độ $(0,0)$.</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A, C, D.</b><br> A, C, D là định nghĩa chuẩn. B sai nghiêm trọng! Định lý Schwarz (Về sự bằng nhau của đạo hàm chéo $f''_{xy} = f''_{yx}$) BẮT BUỘC ĐÒI HỎI điều kiện các đạo hàm riêng cấp 2 phải LIÊN TỤC tại điểm xét. Có những hàm bệnh lý mà đạo hàm chéo khác nhau nếu điều kiện này vi phạm.</div>
+    </div>
+
+    <div class="question-block" data-type="multiple" data-answer="A,B,C">
+        <div class="question-text">Câu 14: Xét các điểm cực trị của hàm số $f(x,y) = x^4 + y^4 - x^2 - y^2$. Những mệnh đề nào ĐÚNG?</div>
+        <div class="options">
+            <label><input type="checkbox" name="de6_gt2_q14" value="A"> A. Điểm $(0,0)$ là một điểm Cực Đại Địa Phương của hàm số.</label>
+            <label><input type="checkbox" name="de6_gt2_q14" value="B"> B. Các điểm $(\pm 1/\sqrt{2}, \pm 1/\sqrt{2})$ là các điểm Cực Tiểu Địa Phương.</label>
+            <label><input type="checkbox" name="de6_gt2_q14" value="C"> C. Điểm $(1/\sqrt{2}, 0)$ là một Điểm Yên Ngựa.</label>
+            <label><input type="checkbox" name="de6_gt2_q14" value="D"> D. Hàm số có 1 điểm cực đại, 2 điểm cực tiểu và không có điểm yên ngựa nào.</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A, B, C.</b><br> Hàm số có tới 9 điểm dừng. A: Tại (0,0), $\Delta=4>0, A=-2<0 \Rightarrow$ Cực đại. B: Tại 4 điểm đối xứng $(\pm 1/\sqrt{2}, \pm 1/\sqrt{2})$, $\Delta = 16>0, A=4>0 \Rightarrow$ Cực tiểu (4 điểm). C: Tại 4 điểm nằm trên trục $( \pm 1/\sqrt{2}, 0)$ và $(0, \pm 1/\sqrt{2})$, $\Delta = -8 < 0 \Rightarrow$ Yên ngựa (4 điểm). D sai vì mô tả thiếu số lượng và bản chất điểm.</div>
+    </div>
+
+    <div class="question-block" data-type="multiple" data-answer="A,B,C,D">
+        <div class="question-text">Câu 15: Liên quan đến Vector Gradient và Đạo hàm theo hướng. Các tính chất nào ĐÚNG TẤT CẢ?</div>
+        <div class="options">
+            <label><input type="checkbox" name="de6_gt2_q15" value="A"> A. Gradient luôn vuông góc với đường mức tại điểm đang xét.</label>
+            <label><input type="checkbox" name="de6_gt2_q15" value="B"> B. Đạo hàm theo hướng đạt giá trị Max (lớn nhất) khi hướng đó trùng với hướng của Vector Gradient.</label>
+            <label><input type="checkbox" name="de6_gt2_q15" value="C"> C. Đạo hàm theo hướng đạt giá trị Min (nhỏ nhất) khi hướng đó ngược chiều với Vector Gradient.</label>
+            <label><input type="checkbox" name="de6_gt2_q15" value="D"> D. Nếu di chuyển theo hướng tiếp tuyến của đường mức, đạo hàm theo hướng sẽ bằng 0.</label>
+        </div>
+        <div class="explanation"><b>Đáp án đúng: A, B, C, D (Toàn bộ).</b><br> Đây là 4 tính chất VÀNG của Gradient mà sinh viên Bách Khoa phải thuộc lòng! Đạo hàm theo hướng $D_{\vec{l}}f = |\nabla f|\cos\theta$.<br> B: $\theta = 0 \Rightarrow \cos\theta=1$ (Max). C: $\theta = \pi \Rightarrow \cos\theta=-1$ (Min). D: Tiếp tuyến đường mức thì vuông góc Gradient $\Rightarrow \theta = \pi/2 \Rightarrow \cos\theta=0$. A: Tính chất hình học cơ bản do đường mức $f=const \Rightarrow df=0 \Rightarrow \nabla f \cdot d\vec{r} = 0$.</div>
     </div>
 </div>
-
+<!-- KẾT THÚC ĐỀ SỐ 6 -->
 <!-- ========================================================= -->
 <!-- MÃ HTML ĐỀ SỐ 7 (BẢN GỐC) - DÁN VÀO DATABASE -->
 <!-- ========================================================= -->
